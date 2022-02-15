@@ -1,0 +1,139 @@
+        <!-- 总览 -->
+        <div class="overview_main" id="div1" v-show="div1">
+          <div class="overview_main_top">
+            <div class="overview_main_top_user" style="background:#FFCC99;">
+              <a class="">用户数量</a>
+              <div class="hr"></div>
+              <a v-text="usernum" id="UserNum"></a>
+            </div>
+            <div class="overview_main_top_user" style="background:#99CCFF;">
+              <a class="">动态数量</a>
+              <div class="hr"></div>
+              <a>2</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 用户列表 -->
+        <div class="UserList_main" id="div2" v-show="div2">
+          <div class="UserList_main_top">
+            <input class="UserList_main_top_text" class="text" type="text" name="name" v-on:change="UserList()" id="name" placeholder="搜索" autocomplete="off">
+              <!-- <button type="button" name="button" @click="UserList()">搜索</button> -->
+
+          </div>
+           <!-- v-for="item in UserList1" -->
+          <div class="UserList_main_bottom">
+            <!-- 用户列表头部 -->
+            <li class="UserList_li">
+              <a class="UserList_li_id">id</a>
+              <a class="UserList_li_name">昵称</a>
+              <a class="UserList_li_account">账号</a>
+              <a class="UserList_li_mail">邮箱</a>
+              <a class="UserList_li_phone">电话</a>
+              <a class="UserList_li_address">地址</a>
+              <a class="UserList_li_RegisterTime">注册时间</a>
+              <a class="UserList_li_position">职位</a>
+            </li>
+            <!-- 用户列表循环 -->
+            <li class="UserList_li" v-for="item in UserList1">
+              <a class="UserList_li_id">{{ item.id }}</a>
+              <a class="UserList_li_name">{{ item.name }}</a>
+              <a class="UserList_li_account">{{ item.account }}</a>
+              <a class="UserList_li_mail">{{ item.mail }}</a>
+              <a class="UserList_li_phone">{{ item.phone }}</a>
+              <a class="UserList_li_address">{{ item.address }}</a>
+              <a class="UserList_li_RegisterTime">{{ item.RegisterTime }}</a>
+              <a class="UserList_li_position">{{ item.position }}</a>
+            </li>
+
+          </div>
+        </div>
+
+
+
+
+
+        左侧列表
+
+
+
+
+                  <div @click="qiehuan1()"><div class="main_left_li_li"><i class="main_left_li_left fa fa-pie-chart" style="line-height:45px;"></i><a>总览</a></div></div>
+          <div @click="qiehuan2('UserList')"><div class="main_left_li_li"><i class="main_left_li_left fa fa-user" style="line-height:45px;"></i><a>用户列表</a></div></div>
+          <div onclick="javascript:"><div class="main_left_li_li"><i class="main_left_li_left fa fa-cloud" style="line-height:45px;"></i><a>动态</a><i class="main_left_li_right fa fa-sort-desc" style="line-height:45px;"></i></div>
+            <div class="main_left_li_pull">
+              <li class="main_left_li_pull_li"><a>全部动态</a></li>
+              <li class="main_left_li_pull_li"><a>动态推荐</a></li>
+              <li class="main_left_li_pull_li"><a>动态审核</a></li>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var app =new Vue({
+        el:'.main',
+        data:{
+          html_right:"",
+          usernum:"",
+          UserList1:"",
+          div1:true,
+          div2:false
+        },
+        mounted:function() {
+          this.UserNum()
+        },
+        methods:{
+          UserNum(){
+            axios({
+              method:'get',
+              url:'UserNum.php'
+            }).then(function(res){
+              app.usernum=res.data;
+            });
+          },
+          UserList(){
+            var name = document.getElementById('name').value;
+            axios({
+              method:'get',
+              url:'UserSeek.php?name='+name
+            }).then(function(res){
+              app.UserList1 = res.data;
+              // app.UserList1 = JSON.stringify(res.data);
+              console.log(JSON.stringify(res.data));
+              // console.log(JSON.stringify(res.data));
+            });
+          },
+          qiehuan1(){
+            app.div1 = true;
+            app.div2 = false;
+          },
+          qiehuan2(){
+            app.div1 = false;
+            app.div2 = true;
+            this.UserList();
+          }
+        }
+      });

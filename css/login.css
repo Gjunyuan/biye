@@ -1,0 +1,118 @@
+
+
+
+.main_div_1{
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: .9;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 21px;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: rgb(62 57 107 / 28%) 10px 10px 32px 0, transparent 0 0 0 0;
+}
+
+.bg_div{
+  width: 400px;
+  height: 450px;
+}
+.title{
+  color: white;
+  font-size: 50px;
+  color: white;
+  /* text-shadow: 5px 5px 5px rgba(0,0,0,.07); */
+  text-shadow: 5px 5px 5px rgba(0,0,0,.07),5px 5px 5px rgba(0,0,0,.07);
+}
+.text{
+  width: 350px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #DDD;
+  margin-top: 20px;
+  text-align: center;
+  outline: none;
+  caret-color: #666;
+  color: #666;
+}
+.submit{
+  width: 60px;
+  height: 60px;
+  display: block;
+  border: 0;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50px;
+  background: white;
+  color: #000;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  /* box-shadow: rgba(0,0,0,.1) 0 15px 35px 0, rgba(0,0,0,.07) 0 3px 10px 0; */
+}
+.register{
+  color: #666;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  /* text-shadow: 5px 5px 5px rgba(0,0,0,.07),5px 5px 5px rgba(0,0,0,.07); */
+}
+.register:hover{
+  text-decoration:underline;
+}
+.yiyan{
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  color: #333;
+  font-style: italic;
+  background: rgba(255, 255, 255, .6);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.logo{
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+.logo>img{
+  width: 50px;
+  height: 50px;
+  float: left;
+  border-radius: 50%;
+}
+.logo>span{
+  float: left;
+  line-height: 50px;
+  font-size: 30px;
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  font-family: '宋体';
+}
+.tuyuan{
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  color:#666;
+  z-index: 9999;
+  font-size: 16px;
+}
+
+.tuyuan_url{
+  color:#666;
+  text-decoration:none;
+}
+.tuyuan_url:hover{
+  text-decoration:solid;
+}

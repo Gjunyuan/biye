@@ -1,0 +1,217 @@
+.container_center_val,
+.container_top_n,
+.container_top_sign{
+    user-select:text;
+}
+.container{
+    width: 1080px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: white;
+    box-sizing: border-box;
+    margin-top: 250px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 70px -30px #888 !important;
+    margin-bottom: 10px;
+}
+.container_top{
+    width: 100%;
+    height: 200px;
+    /* background: rgba(200, 200, 200, .5); */
+    margin-top: -200px;
+}
+.container_top_head{
+    width: 200px;
+    height: 200px;
+    border:5px solid rgba(255, 255, 255, .6);
+    box-sizing: border-box;
+    float: left;
+    background: rgba(255, 255, 255, .3);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px -40px 70px -30px #888 !important;
+}
+.container_top_head>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.container_top_name{
+    float: left;
+    width: calc(100% - 200px);
+    height: 150px;
+}
+.container_top_n{
+    color: white;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+    margin-top: 70px;
+    
+}
+.container_top_sign{
+    display: block;
+    color: white;
+    margin-left: 25px;
+}
+.container_top_li{
+    float: left;
+    width: calc(100% - 200px);
+    height: 50px;
+    cursor: pointer;
+}
+
+.container_top_li>li{
+    float: left;
+    list-style: none;
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    transition: all .2s linear;
+}
+.container_top_li>li:hover{
+    background: #EEE;
+}
+.container_top_li>i{
+    float: left;
+    height: 30px;
+    background: #AAA;
+    width: 1px;
+    margin-top: 10px;
+}
+
+
+
+.container_center{
+    margin-top: 10px;
+    list-style: none;
+    line-height: 25px;
+    margin-left: 50px;
+}
+.container_center_i{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container_center_li{
+    font-weight: bold;
+    color: #333;
+}
+.container_center_val{
+    color: #333;
+}
+
+
+/* .container_pull_x{
+    margin-top: 200px;
+} */
+.container_pull_button{
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    background: #0099CC;
+    color: white;
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+  }
+.container_updata{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 999;
+}
+.container_updata_div{
+    width: 550px;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.container_updata_div_li{
+    width: 350px;
+    height: 100px;
+    /* border: 2px #99CCFF solid; */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0px 0 50px -27px #999 !important;
+    float: left;
+}
+.container_updata_div_li>img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    object-fit: cover;
+}
+.container_updata_text{
+    width: 430px;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    background: #EEE;
+}
+.container_updata_text_div{
+    overflow: hidden;
+    margin-top: 10px;
+    width: 500px;
+    height: 47px;
+    
+}
+
+
+
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0,0);
+    float: left;
+    height: 100px;
+    width: 250px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.fileContainer [type=file] {
+    display: block;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    cursor: pointer;
+}
+
+.submit{
+    display: block;
+    border: 0;
+    outline: none;
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 27px;
+}

@@ -1,0 +1,111 @@
+.inform_main{
+    width: 100%;
+    height: calc(100% - 45px);
+    background: #EEE;
+}
+.inform_mian_left{
+    width: 70%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #DDD;
+}
+.inform_mian_left_b{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #AAA;
+}
+.inform_mian_left_a{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* background: white; */
+    z-index: 1;
+}
+.inform_mian_right{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.inform_mian_right_li{
+    cursor: pointer;
+}
+.inform_mian_left_top{
+    height: 60px;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.inform_mian_left_div{
+    width: calc(100% - 60px);
+    height: 60px;
+    float: left;
+    padding-left: 10px;
+}
+.Inform_head{
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.Inform_name{
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.Inform_Time{
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+}
+.inform_mian_left_center,.inform_mian_left_bottom{
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+.inform_val{
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+.inform_img{
+    float: left;
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.inform_mian_left_bottom{
+    width: 100%;
+    height: 100px;
+    /* background: red; */
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inform_mian_left_bottom>button{
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    height: 45px;
+}

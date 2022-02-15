@@ -1,0 +1,179 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+}
+.bg{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(../image/bg/1.jpg);
+  background: #888;
+  transform: scale(1.01);
+  background-position: 50% 50%;
+  background-size: cover;
+  box-sizing: border-box;
+  /* filter: blur(5px); */
+  z-index: 1;
+}
+
+.bg_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  z-index: 999;
+}
+.bg{
+  animation: mymove2 2s;
+}
+@keyframes mymove2 {
+  0% {
+    filter: blur(15px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+
+
+
+
+.main_bottom {
+  width: 100vw;
+  height: 30px;
+  position: ;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.main_bottom_mohu {
+  width: 100%;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  filter: blur(1px);
+}
+
+.main_bottom_div {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  line-height: 30px;
+  text-align: center;
+  top: -30px;
+  left: 0;
+}
+
+.main_bottom_div>a {
+  text-decoration: none;
+  color: #333;
+  float: right;
+  margin-right: 25px;
+}
+
+/*拖动条*/
+::-webkit-scrollbar {
+  width: 6px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  /* height: 0; */
+}
+
+/*滚动条整体部分*/
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*滚动条里面的小方块（即滚动条滑块），能向上向下移动（或横向滚动条可往左往右移动）*/
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/*滚动条的轨道的两端按钮，允许通过点击微调小方块的位置*/
+
+.container,
+.container_div,
+.comment_div,
+.comment_div_top,
+.comment_div_center,
+.container_updata,
+.pic,
+.container_comment,
+.comment{
+  animation: mymove1 .5s;
+
+}
+
+.container_div:nth-child(1) {
+  animation: mymove1 .5s;
+}
+
+.container_div:nth-child(2) {
+  animation: mymove1 .6s;
+}
+
+.container_div:nth-child(3) {
+  animation: mymove1 .7s;
+}
+
+.container_div:nth-child(4) {
+  animation: mymove1 .8s;
+}
+
+.container_div:nth-child(5) {
+  animation: mymove1 .9s;
+}
+
+
+
+
+.head,
+.container_img {
+  animation: mymove1 1.5s;
+}
+
+
+
+/* 全局懒动画 */
+/* @keyframes mymove
+	{
+	from {opacity: 0;}
+	to {opacity: 1;}
+} */
+@keyframes mymove1 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* 使v-show没加载完成之前不会页面闪烁 */
+[v-cloak]{
+  display: none;
+}

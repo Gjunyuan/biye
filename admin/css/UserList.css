@@ -1,0 +1,54 @@
+.UserList_main {
+  width: 100%;
+  min-width: 1680px;
+  height: 100%;
+  overflow: auto;
+}
+
+.UserList_main_top {
+  width: 100%;
+  height: 55px;
+  background: #444;
+}
+
+.UserList_main_top_text {
+  width: 300px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 15px;
+  border: 0;
+  outline: none;
+  overflow: auto;
+  padding-left: 10px;
+}
+
+
+  /* 修改 */
+  .User_up{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.User_up_div{
+  width: 480px;
+  height: 80vh;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #FFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.form-control{
+  width: 400px !important;
+}
